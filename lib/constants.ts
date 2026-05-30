@@ -25,16 +25,11 @@ export const NAV_ITEMS: NavItem[] = [
 export const FOOTER_LINKS = {
   product: [
     { label: "기능", href: "#features" },
-    { label: "가격", href: "#pricing" },
     { label: "문서", href: "/docs" },
   ],
   company: [
     { label: "소개", href: "/about" },
     { label: "블로그", href: "/blog" },
     { label: "연락처", href: "/contact" },
-  ],
-  legal: [
-    { label: "개인정보처리방침", href: "/privacy" },
-    { label: "이용약관", href: "/terms" },
   ],
 }

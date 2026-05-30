@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-border/40 bg-background">
       <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 mb-8">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 mb-8">
           <div>
             <h3 className="font-semibold mb-4">상품</h3>
             <nav className="flex flex-col gap-3">
@@ -28,21 +28,6 @@ export function Footer() {
             <h3 className="font-semibold mb-4">회사</h3>
             <nav className="flex flex-col gap-3">
               {FOOTER_LINKS.company.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          <div className="col-span-2 md:col-span-2">
-            <h3 className="font-semibold mb-4">법률</h3>
-            <nav className="flex flex-col gap-3">
-              {FOOTER_LINKS.legal.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
